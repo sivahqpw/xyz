@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ValueFit Checker v2: A master prompt to test what to sell and what to share for free." />
+  <title>ValueFit Checker v2</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #ffffff);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #004d80;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    pre {
+      background: #fdfdfd;
+      border-left: 5px solid #004d80;
+      padding: 25px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 14px 32px;
+      background: #004d80;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+    button:hover {
+      background: #003355;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ValueFit Checker v2</h1>
+    <pre id="promptText">I have learnt this: [insert what you have learnt].
+
+Help me test if this knowledge is worth selling or giving away for free.
+
+---
+
+1️⃣ **Evaluate the Idea**
+- Rate it using *only* one option:
+   1. Too basic → everyone probably knows this already, so unlikely to sell.
+   2. Too niche or trivial → very few care, so not worth selling alone.
+   3. Part of a bigger idea → better as a free taste to attract people to my bigger, deeper paid offer.
+
+👉 Use this check:
+- Learning = raw ingredient
+- Selling = needs a recipe, clear presentation, and proven demand.
+
+**Also consider:** Who is the target audience? What do they already know? Would *they* pay for this or expect it free?
+
+---
+
+2️⃣ **Free or Paid?**
+Use this Key Rule:
+- If it *builds trust*, sparks curiosity, or positions me as an *expert* → share for free.
+- If it *saves time, money, effort*, or gives them a *real edge* → make it paid.
+
+Given that, is this knowledge best for free or paid? Explain why with 2–3 clear reasons.
+
+---
+
+3️⃣ **80% or 20% Rule + Next Step**
+Most creators share 80% free → to build audience → and sell the 20% that’s deeper, practical, or done-for-them.
+
+So:
+- Does this belong in my *80% free* or *20% paid*?
+- If *80% free*: Suggest 1–2 *deeper paid angles* related to this idea that I could sell.
+- If *20% paid*: Suggest 1–2 *best product formats* (ebook, mini course, template, toolkit, private session) and explain why people would pay.
+
+---
+
+**Format your answer clearly for each part, with bullet points where needed.**</pre>
+    <button onclick="copyPrompt()">Copy Prompt</button>
+  </div>
+  <script>
+    function copyPrompt() {
+      const text = document.getElementById('promptText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt copied to clipboard!');
+      }, () => {
+        alert('Failed to copy.');
+      });
+    }
+  </script>
+</body>
+</html>
