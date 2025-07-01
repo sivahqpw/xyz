@@ -1,0 +1,24 @@
+    <section id="preparation">
+      <h2><input type="checkbox" class="category" readonly> Preparation</h2>
+      <ul>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#1: Understand [verb] [output]</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="#">Resource Link 1</a></label></li>
+            <li><label><input type="checkbox" class="link"> <a href="#">Resource Link 2</a></label></li>
+          </ul>
+        </li>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#2: Get Creative Compass</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="#">Template Link</a></label></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+
+    <nav>
+      <a href="#preparation">Preparation</a>
+    </nav>
+

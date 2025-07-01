@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Action Name Resources' Links</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f6fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #2a4f6e, #1f3b53);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #2a4f6e;
+      margin-top: 0;
+      border-left: 5px solid #2a4f6e;
+      padding-left: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .subcategory {
+      margin: 20px 0;
+    }
+    .subcategory-title {
+      font-weight: 600;
+      color: #1f3b53;
+      font-size: 1.1rem;
+      margin-left: 5px;
+      /* --- CHANGE HERE: Ensure cursor is not a pointer --- */
+      cursor: default;
+    }
+    ul ul {
+      padding-left: 25px;
+      margin-top: 10px;
+    }
+    ul ul li {
+      margin: 10px 0;
+    }
+    a {
+      color: #2a4f6e;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+    a:hover {
+      background: #2a4f6e;
+      color: #fff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    input[type="checkbox"][readonly] {
+      pointer-events: none;
+    }
+    input.subcategory[readonly] {
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Start with Starter | Use Compass to guide you.</h1>
+    <p>Let Starter make your to-do list, and Compass show you how.<br />Just follow the list, complete each task, and check it off.</p>
+    <nav>
+      <a href="#principle">Secrets</a>
+      <a href="#todo">To Do</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Example Section: Repeat for others -->
+    <section id="principle">
+      <h2><input type="checkbox" class="category" readonly>The Secret</h2>
+      <ul>
+      <ul>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#1: Start with Starter</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/starter/">If it's from a verb & output</a></label></li>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/docstarter/">If it's from a document</a></label></li>
+          </ul>
+        </li>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#2: Use Compass to guide you.</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/cc/">It's universal</a></label></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="todo">
+      <h2><input type="checkbox" class="category" readonly>Create Your Own "To Do" List</h2>
+      <ul>
+      <ul>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#1: Create a New HTML page for this To Do List</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/starter/">Copy From Template and Paste in this file</a></label></li>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/docstarter/">Copy this code, edit, and paste in its body</a></label></li>
+          </ul>
+        </li>
+        <li class="subcategory">
+          <input type="checkbox" class="subcategory" readonly> <span class="subcategory-title">Step#2: Use Compass to guide you.</span>
+          <ul>
+            <li><label><input type="checkbox" class="link"> <a href="https://cartinnet.github.io/cc/">It's universal</a></label></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- Repeat similar blocks for #production, #setup, #outreach, #promotion -->
+  </main>
+
+
+<!--- ChatGPT Start ---!>
+
+<div style="width:100%; display:flex; justify-content:center; margin-top:40px; margin-bottom:40px;">
+  <a href="intent://chat.openai.com/#Intent;scheme=https;package=com.openai.chatgpt;end"
+     style="background-color:#343541; color:#ffffff; padding:15px 30px; text-decoration:none; font-size:18px; font-family:sans-serif; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.3); display:inline-block; text-align:center;">
+    Open in ChatGPT App
+  </a>
+</div>
+
+
+<p style="text-align:center; font-family:sans-serif; color:#555; font-size:14px;">
+  Not working? <a href="https://chat.openai.com/" style="color:#343541;">Try opening ChatGPT in browser</a>
+</p>
+
+<!--- ChatGPT End ---!>
+
+
+  <script>
+    function updateParentCheckboxes() {
+      document.querySelectorAll("section").forEach(section => {
+        const categoryCheckbox = section.querySelector(".category");
+        const subcategories = section.querySelectorAll(".subcategory");
+        let allSubcategoriesChecked = true;
+
+        subcategories.forEach(sub => {
+          // --- CHANGE HERE: Changed selector to find the input directly within the <li> ---
+          const subCheckbox = sub.querySelector("input.subcategory");
+          const links = sub.querySelectorAll(".link");
+          const allLinksChecked = Array.from(links).every(link => link.checked);
+          if (subCheckbox) {
+            subCheckbox.checked = allLinksChecked;
+            // The readonly attribute is set in HTML, but this ensures it stays set
+            if (!subCheckbox.hasAttribute('readonly')) {
+              subCheckbox.setAttribute("readonly", "true");
+            }
+          }
+          if (!allLinksChecked) allSubcategoriesChecked = false;
+        });
+
+        if (categoryCheckbox) categoryCheckbox.checked = allSubcategoriesChecked;
+      });
+    }
+
+    document.querySelectorAll(".link").forEach(cb => {
+      cb.addEventListener("change", updateParentCheckboxes);
+    });
+
+    window.addEventListener("DOMContentLoaded", updateParentCheckboxes);
+  </script>
+</body>
+</html>
