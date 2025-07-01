@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is my master prompt to break down what goes free, what’s paid, where to post, and how to deliver real value." />
+  <title>SharePlan Prompt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+    pre {
+      background: #f9f9f9;
+      border-left: 4px solid #007acc;
+      padding: 20px;
+      border-radius: 6px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 30px;
+      background: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #005b99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SharePlan Prompt</h1>
+    <pre id="promptText">I have just learnt this new thing: [insert what you have learnt, e.g., "a great technique of doing classwork using ChatGPT"].
+
+I want you to create a complete content plan for sharing this new learning across all the platforms I use:
+
+1. Free Blog (good SEO, deep value — attracts strangers on Google too)
+2. Subscriber Blog (deeper pieces, how-tos, unique frameworks — reward loyal followers)
+3. Ebooks (both free and paid)
+4. Social Media (Facebook, other platforms)
+5. WhatsApp (broadcasts, groups)
+6. Facebook Groups (not just Page posts — real engagement)
+
+**Remember:**
+How to Test What’s Free vs Paid vs Subscriber:
+- Social = snack → always free but high perceived value.
+- Free blog = healthy meal → enough depth to help but leaves them wanting the special recipes.
+- Subscriber blog = gourmet → my unique secrets, frameworks, guides.
+- Ebook = takeaway meal → they pay for the full recipe & cooking instructions.
+- Paid ebook = big takeaway meal + bonus chef tips.
+
+**Key Point:**
+Social is not just an announcement board. Treat it as a mini delivery platform for real value — like tiny blog posts that link to my bigger ones.
+
+✅ How This Looks in Practice (use this logic in the plan):
+- Free Blog: Good SEO, deep value.
+- Subscriber Blog: Deeper pieces, how-tos, unique frameworks.
+- Free ebook: Short, powerful, easy to share — lead magnet delivered via WhatsApp if needed.
+- Paid ebook: Bigger, more detailed, practical toolkit.
+- Social Media: Short videos, carousel posts, reels, memes — real value that gives a taste and links to the full content.
+  Example: If my blog is “How to Manage Money with 30% Income” → my FB post can share one golden rule from it with a story → then link to full blog.
+- WhatsApp: Direct shares, broadcast or groups — push links to loyal readers, e.g., “Hey! New post out. Here’s why you’ll love it…”
+- Promotion Without Email: WhatsApp direct share, Facebook Groups engagement, consistent posting, maybe tiny ads.
+
+**Now, using all this, create for me:**
+- A clear plan for what to share for free, what to share for subscribers only, what to put in free and paid ebooks.
+- Exact content suggestions for each platform: Blog (free), Blog (subscriber), Social Media (Facebook), WhatsApp, Facebook Groups.
+- 3 examples of what my Social Media posts can look like for this topic.
+- WhatsApp message sample I can copy.
+- Anything else I should keep in mind.
+
+Format the answer clearly with bullet points for each platform.</pre>
+    <button onclick="copyPrompt()">Copy Prompt</button>
+  </div>
+  <script>
+    function copyPrompt() {
+      const text = document.getElementById('promptText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt copied to clipboard!');
+      }, () => {
+        alert('Failed to copy.');
+      });
+    }
+  </script>
+</body>
+</html>
