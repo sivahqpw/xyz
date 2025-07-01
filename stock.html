@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Prompts | Siva Prasad Mukherjee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-2xl font-bold mb-6">Stock of Prompts</h1>
+
+    <div class="flex space-x-4 mb-4">
+      <button class="tab-button px-4 py-2 bg-blue-600 text-white rounded" data-tab="finaloutput">Analyze Final Outcomes in Sentence</button>
+      <button class="tab-button px-4 py-2 bg-gray-300 rounded" data-tab="social">Social Media Promos</button>
+    </div>
+
+    <div id="finaloutput" class="tab-content active">
+      <div class="bg-white p-4 mb-4 rounded shadow flex justify-between items-start">
+<p class="text-sm w-11/12">Here are some sentences. For each one, tell me the ultimate outcome or result that is implied. Who ends up doing the action, or what happens in the end?
+Sentences:<br />
+[Insert Sentence 1]<br />
+[Insert Sentence 2]<br />
+[Insert Sentence 3]</p>
+        <button class="copy-btn text-blue-600" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m2 4h2a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2v-2"/></svg></button>
+      </div>
+    </div>
+
+
+    <div id="social" class="tab-content">
+      <div class="bg-white p-4 mb-4 rounded shadow flex justify-between items-start">
+        <p class="text-sm w-11/12">🚀 Just found a killer tool that helps me save hours every week! Try it out 👉 https://example.com/affiliate-link #productivity</p>
+        <button class="copy-btn text-blue-600" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m2 4h2a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2v-2"/></svg></button>
+      </div>
+      <div class="bg-white p-4 mb-4 rounded shadow flex justify-between items-start">
+        <p class="text-sm w-11/12">This tool changed the way I work. Check it here: https://example.com/affiliate-link #AffiliateMarketing</p>
+        <button class="copy-btn text-blue-600" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m2 4h2a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2v-2"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+        button.classList.add('bg-blue-600', 'text-white');
+        
+        const tab = button.getAttribute('data-tab');
+        document.querySelectorAll('.tab-content').forEach(tc => {
+          tc.classList.remove('active');
+        });
+        document.getElementById(tab).classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.parentElement.querySelector('p').innerText;
+        navigator.clipboard.writeText(text);
+        btn.innerHTML = '✔️';
+        setTimeout(() => {
+          btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m2 4h2a2 2 0 012 2v8a2 2 0 01-2 2H10a2 2 0 01-2-2v-2"/></svg>`;
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
