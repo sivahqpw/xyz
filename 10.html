@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Content Creation Workflow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(145deg, #f4f4f4, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      color: #5e26cd;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    ol {
+      padding-left: 1.2rem;
+    }
+
+    ol li {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .copy-btn {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #5e26cd;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .copy-btn:hover {
+      background-color: #4520a8;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Content Creation Workflow</h1>
+
+    <div id="instructions">
+      <p><strong>Instructions:</strong> These are the steps I follow to create my content. Please assist accordingly.</p>
+      <ol>
+        <li>Define the content’s purpose, target audience, and desired outcome.</li>
+        <li>Identify the standard template I intend to use.</li>
+        <li>Generate a prompt to extract the required inputs based on the template.</li>
+        <li>List all required inputs in bullet points.</li>
+        <li>Create specific questions to find answers for those inputs.</li>
+        <li>Identify the sources where those answers should be gathered.</li>
+        <li>Generate a prompt to extract relevant answers from the identified sources.</li>
+        <li>Create a table to organize and conceptualize the answers and information.</li>
+        <li>Use the table to generate a detailed outline or content draft.</li>
+        <li>Review and refine the content to ensure alignment with the purpose and audience.</li>
+      </ol>
+    </div>
+
+    <button class="copy-btn" onclick="copyInstructions()">📋 Copy Instructions</button>
+  </div>
+
+  <script>
+    function copyInstructions() {
+      const text = document.getElementById("instructions").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Instructions copied to clipboard!");
+      }).catch(err => {
+        alert("Failed to copy text: " + err);
+      });
+    }
+  </script>
+</body>
+</html>
