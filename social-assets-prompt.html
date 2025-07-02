@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reusable Social Media Assets Prompt Template: A ready-to-copy master prompt to create ethical, high-standard lead magnet posts and bio." />
+  <title>Social Media Assets Prompt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #ffffff);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #004d80;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    pre {
+      background: #fdfdfd;
+      border-left: 5px solid #004d80;
+      padding: 25px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 14px 32px;
+      background: #004d80;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+    button:hover {
+      background: #003355;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reusable Social Media Assets Prompt</h1>
+    <pre id="promptText">Act as my ethical social media marketing copywriter. 
+I want you to write the following four elements for my [niche/topic/offer] that I am promoting on [specific social media platform]:
+
+1) A clear, audience-specific **Profile Bio** that:
+   - Calls out the target audience and their main pain point.
+   - Mentions the free lead magnet I’m offering.
+   - Tells them exactly what to DM:  DM me “[keyword]” and I’ll send it to you right now.
+   - Maintains an ethical tone with no misleading claims.
+
+2) A **Pinned Post** for my personal profile that:
+   - Hooks attention with a relatable headline.
+   - Describes the value or result the audience wants.
+   - Introduces the free lead magnet in 2–3 bullet points.
+   - Gives a clear CTA to DM a keyword: DM me “[keyword]” and I’ll send it to you right now.
+   - Uses clear, compliant, and professional language.
+
+3) A **Dedicated Promotional Post** for my feed that:
+   - Builds interest by sharing a short story, insight, or pain point.
+   - Highlights what makes this lead magnet unique and easy to use.
+   - Clearly says what problem it solves for the audience.
+   - Gives an easy CTA to DM a keyword or comment to receive it.
+
+4) A **Pinned Post** for my private group dedicated to this lead magnet that:
+   - Welcomes new members and reminds them why they’re here.
+   - Clearly explains how to access or download the lead magnet.
+   - Sets expectations for engagement (e.g., introduce yourself, ask questions).
+   - Repeats the lead magnet’s benefit and ethical promise.
+
+Always use simple, clear language that is legally safe (no false claims, no guarantees if not proven). Always respect international marketing standards and platform guidelines.
+
+Use this exact structure and mindset every time. 
+[Include any extra context, like what the lead magnet is, who it’s for, and your brand’s personality if needed.]
+</pre>
+    <button onclick="copyPrompt()">Copy Prompt</button>
+  </div>
+  <script>
+    function copyPrompt() {
+      const text = document.getElementById('promptText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt copied to clipboard!');
+      }, () => {
+        alert('Failed to copy.');
+      });
+    }
+  </script>
+</body>
+</html>
