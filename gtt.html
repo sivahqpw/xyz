@@ -31,7 +31,7 @@
       font-size: 16px;
     }
 
-    div {
+    div.content {
       width: 600px;
       margin: 5em auto;
       padding: 2em;
@@ -50,7 +50,7 @@
     }
 
     @media (max-width: 700px) {
-      div {
+      div.content {
         margin: 30px 20px 0;
         width: auto;
       }
@@ -96,7 +96,18 @@
 
     #back-to-top-btn:hover { background-color: #333; }
 
-    #google_translate_element { display: none; }
+    /* NEW: Floating translate widget */
+    #google_translate_element {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      z-index: 9999;
+      background: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
   </style>
 
   <script>
@@ -118,10 +129,15 @@
 </head>
 
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-  <div>
+  
+  <!-- Floating Google Translate Container -->
+  <div id="google_translate_element"></div>
+
+  <div class="content">
     <h1>Sharing on Social Media</h1>
-    <p>Welcome to the website. If you're here, you're likely looking to find random words...</p>
-    <!-- (Keep your other content here as it is) -->
+    <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this...</p>
+    <!-- (Rest of your text) -->
+
     <p style="text-align: center; margin-top: 50px;">
       <span style="font-size: 12pt; font-family: lora, serif; color: #000000;">
         Copyright &copy; <script>document.write(new Date().getFullYear())</script>.&nbsp;Siva Prasad Mukherjee.
@@ -131,9 +147,6 @@
 
   <!-- Back to Top Button -->
   <button id="back-to-top-btn" title="Go to top">&uarr;</button>
-
-  <!-- Google Translate Container -->
-  <div id="google_translate_element"></div>
 
   <!-- Sticky Translate Trigger Button -->
   <button id="translate-trigger-btn" title="Translate this page">🌐</button>
@@ -153,8 +166,8 @@
 
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-      document.getElementById('google_translate_element').style.display = 'block'; // <-- FIXED!
-      document.getElementById('translate-trigger-btn').style.display = 'none';
+      document.getElementById('google_translate_element').style.display = 'block'; // shows it
+      document.getElementById('translate-trigger-btn').style.display = 'none'; // hides button
     }
 
     let translateScriptLoaded = false;
@@ -167,5 +180,6 @@
       translateScriptLoaded = true;
     });
   </script>
+
 </body>
 </html>
